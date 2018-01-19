@@ -1,0 +1,25 @@
+body {
+  /*  'display: grid' needed to initiate 'css grid'; 'body' is now 'grid-container' */
+  display: grid;
+  min-height: 100vh;
+  min-width: 100%;
+  grid-template-rows: 1fr 90px;
+  grid-template-columns: 40px 1fr;
+  grid-template-areas: "sidebar content"
+                       "footer footer";
+}
+
+aside {
+  grid-area: sidebar;
+  background: grey;
+}
+
+main {
+  grid-area: content;
+  background: lime;
+}
+
+footer {
+  grid-area: footer;
+  background: purple;
+}
