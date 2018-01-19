@@ -1,25 +1,49 @@
+/*  mobile screen */
 body {
   /*  'display: grid' needed to initiate 'css grid'; 'body' is now 'grid-container' */
   display: grid;
   min-height: 100vh;
   min-width: 100%;
   grid-template-rows: 1fr 90px;
-  grid-template-columns: 40px 1fr;
-  grid-template-areas: "sidebar content"
-                       "footer footer";
+  grid-template-columns: 1fr;
+  grid-template-areas: "content"
+                       "footer";
+}
+
+/*  large screen  */
+@media only screen and (min-width: 600px) {
+  body {
+    grid-template-columns: 40px 1fr;
+    grid-template-areas: "sidebar content"
+                         "footer footer";
+  }
+
+  aside {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  aside i {
+    display: block;
+  }
 }
 
 aside {
   grid-area: sidebar;
-  background: grey;
+  background: #bad9ff;
 }
 
 main {
   grid-area: content;
-  background: lime;
+  background: #2f8af9;
 }
 
 footer {
   grid-area: footer;
-  background: purple;
+  background: #375b87;
+}
+
+aside i {
+  display: none;
 }
