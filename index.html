@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Music App</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,16 +11,38 @@
   <body>
     <!--  'aside', 'main', 'footer' are divs, but descrptive-->
     <aside>
-      <i class="fa fa-bars"></i>
-      <i class="fa fa-home"></i>
-      <i class="fa fa-search"></i>
-      <i class="fa fa-volume-up"></i>
-      <i class="fa fa-user"></i>
-      <i class="fa fa-spotify"></i>
-      <i class="fa fa-cog"></i>
-      <i class="fa fa-soundcloud"></i>
+      <button><i class="fa fa-bars"></i></button>
+      <a href="#"><i class="fa fa-home"></i></a>
+      <a href="#"><i class="fa fa-search"></i></a>
+      <a href="#"><i class="fa fa-volume-up"></i></a>
+      <a href="#"><i class="fa fa-user"></i></a>
+      <a href="#"><i class="fa fa-spotify"></i></a>
+      <a href="#"><i class="fa fa-cog"></i></a>
+      <a href="#"><i class="fa fa-soundcloud"></i></a>
     </aside>
     <main>
+      <div class="main">
+        <div class="main_header">
+          <div class="img">
+              <img src="https://i.pinimg.com/originals/d4/09/4f/d4094f84638f6f17c4e8fc812825a481.jpg" alt="Billboard Top 100" />
+          </div>
+          <section class="details">
+            <div>
+              <p>Billboard Top 100 Hits</p>
+              <p class="sm-screen-hide">Joe Hisaishi</p>
+              <p class="sm-screen-hide">2017. Charts . 100 songs</p>
+            </div>
+            <!-- music control -->
+            <div>
+              <i class="fa fa-play"> &nbsp;Play all</i>
+              <i class="fa fa-plus"> &nbsp;Add to</i>
+              <i class="fa fa-ellipsis-h">&nbsp;&nbsp;More</i>
+            </div>
+          </section>
+        </div>
+        <div class="main_body">
+        </div>
+      </div>
     </main>
     <footer></footer>
   </body>

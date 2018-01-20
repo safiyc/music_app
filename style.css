@@ -17,6 +17,10 @@ body {
     grid-template-areas: "sidebar content"
                          "footer footer";
   }
+  .main_header {
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: "img dtls";
+  }
 
   aside {
     display: grid;
@@ -31,19 +35,63 @@ body {
 
 aside {
   grid-area: sidebar;
-  background: #bad9ff;
+  background: #cec054;
 }
 
 main {
   grid-area: content;
-  background: #2f8af9;
+  background: #6e9ed8;
 }
 
 footer {
   grid-area: footer;
-  background: #375b87;
+  background: #f92f5e;
 }
 
 aside i {
   display: none;
+}
+
+button {
+  border: 1px solid #f92f5e;
+  background: none;
+}
+
+a i {
+  color: #f92f5e;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main_header {
+  display: grid;
+  color: rgba(255,255,255,0.9);
+  grid-template-areas: "img"
+                        "dtls";
+}
+
+.main_header > .img {
+  grid-area: img;
+}
+
+.main_header > .details {
+  grid-area: dtls;
+}
+
+/* mobile screen */
+@media screen and (max-width: 600px) {
+  .sm-screen-hide {
+    display: none;
+  }
+  .main_header {
+    justify-items: center;
+  }
+  .main_header > .details {
+    text-align: center;
+  }
+  .img > img {
+    width: 500px;
+  }
 }
