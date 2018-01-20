@@ -16,11 +16,11 @@ aside {
 }
 
 a i {
-  color: #f92f5e;
+  color: #4571a8;
 }
 
 aside button {
-  border: 1px solid #f92f5e;
+  border: 1px solid #4571a8;
   background: none;
 }
 
@@ -31,12 +31,13 @@ main {
 
 footer {
   grid-area: footer;
-  background: #f92f5e;
+  background: #4571a8;
 }
 
 img {
   max-width: 100%;
-  border: 10px solid #f92f5e;
+  border: 5px solid #4571a8;
+  /* margin: 10px; */
 }
 
 .main_header {
@@ -52,8 +53,27 @@ img {
 
 .main_header > .details {
   grid-area: dtls;
-  margin-top: 12%;
-  padding-left: 15px;
+  margin-top: 55px;
+  margin-left: 10%;
+}
+
+.main_body {
+  /* margin: 10px; */
+  border: 5px solid #4571a8;
+}
+
+.main_body > div {
+  display: flex;
+  padding-left: 5px;
+  background: #a9caf2;
+}
+
+.main_body > div:nth-child(even) {
+  background: #6e9ed8;
+}
+
+.main_body > div p {
+  flex: 0 0 25%;
 }
 
 /* mobile screen */
@@ -66,7 +86,11 @@ img {
   }
   .main_header > .details {
     text-align: center;
-    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .main_body {
+    margin: 10px auto;
+    margin-bottom: 0px;
   }
   .img > img {
     width: 500px;
